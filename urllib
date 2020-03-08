@@ -1,0 +1,6 @@
+from urllib import requests
+
+url = 'https://www.reuters.com/companies/PEUP.PA/financials/income-statement-annual
+'
+r = requests.get(url, allow_redirects=True)
+open('url', 'wb').write(r.content)
